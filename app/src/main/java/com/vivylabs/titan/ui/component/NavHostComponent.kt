@@ -1,11 +1,10 @@
-package com.vivylabs.titan.ui.view.component
+package com.vivylabs.titan.ui.component
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.vivylabs.titan.ui.view.clazz.Screen
-import com.vivylabs.titan.ui.view.screen.*
+import com.vivylabs.titan.ui.screen.*
 
 @Composable
 fun NavHostComponent(navController: NavHostController) {

@@ -1,4 +1,4 @@
-package com.vivylabs.titan.ui.view.screen
+package com.vivylabs.titan.ui.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

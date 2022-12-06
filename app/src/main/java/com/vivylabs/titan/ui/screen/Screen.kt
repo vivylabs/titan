@@ -1,4 +1,4 @@
-package com.vivylabs.titan.ui.view.clazz
+package com.vivylabs.titan.ui.screen
 
 sealed class Screen(val route: String) {
     object Home : Screen("home")

@@ -1,4 +1,4 @@
-package com.vivylabs.titan.ui.view.model
+package com.vivylabs.titan.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 
