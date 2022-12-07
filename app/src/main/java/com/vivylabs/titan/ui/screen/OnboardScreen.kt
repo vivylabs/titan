@@ -2,6 +2,7 @@ package com.vivylabs.titan.ui.screen
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,16 +35,17 @@ fun OnboardScreen() {
             pagerState = pagerState,
             modifier = Modifier
                 .align(Alignment.CenterHorizontally),
-            activeColor = Color.Black
+            activeColor = MaterialTheme.colors.primaryVariant,
+            inactiveColor = Color.LightGray
         )
-        Spacer(modifier = Modifier.height(28.dp))
         AnimatedVisibility(visible = pagerState.currentPage == 0 || pagerState.currentPage == 1) {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.padding(horizontal = 16.dp)
             ) {
+                Spacer(modifier = Modifier.height(40.dp))
                 OnboardButtonComponent(buttonText = R.string.onboard_next_button)
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(24.dp))
                 OnboardSkipComponent()
             }
         }
@@ -51,8 +53,9 @@ fun OnboardScreen() {
             Column(
                 modifier = Modifier.padding(horizontal = 16.dp)
             ) {
+                Spacer(modifier = Modifier.height(40.dp))
                 OnboardButtonComponent(buttonText = R.string.onboard_signup_button)
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(20.dp))
                 OnboardOutlinedButtonComponent(buttonText = R.string.onboard_login_button)
             }
         }

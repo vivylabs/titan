@@ -6,8 +6,8 @@
     <string name="onboard_next_button">Next</string>
     <string name="onboard_description1">Make a quick transaction with someone besides you by scanning their Easy Momo Code</string>
     <string name="onboard_description2">Pick a contact directly from your contact list and Momo them in less than no time</string>
-    <string name="onboard_description3">We will never know your Momo PIN in anyway.The app does not share your data with any third party.</string>
-    <string name="onboard_title1">Easy Momo Transfer Easy Momo Transfer</string>
+    <string name="onboard_description3">We will never know your Momo PIN in anyway.The app does not share your data with</string>
+    <string name="onboard_title1">Easy Momo Transfer</string>
     <string name="onboard_title2">Easy Select</string>
     <string name="onboard_title3">Secure</string>
 </resources>

@@ -8,24 +8,28 @@ import androidx.compose.ui.unit.dp
 import com.vivylabs.titan.ui.data.OnboardItem
 
 @Composable
-fun OnboardComponent(onboardModel: OnboardItem) {
+fun OnboardComponent(onboardItem: OnboardItem) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(40.dp))
         Box(
-            modifier = Modifier.padding(horizontal = 32.dp)
+            modifier = Modifier.padding(horizontal = 40.dp)
         ) {
-            OnboardImageComponent(onboardModel.image)
+            OnboardImageComponent(onboardItem.image)
         }
         Spacer(modifier = Modifier.height(32.dp))
-        OnboardTitleComponent(onboardModel.title)
+        Box(
+            modifier = Modifier.padding(horizontal = 24.dp)
+        ) {
+            OnboardTitleComponent(onboardItem.title)
+        }
         Spacer(modifier = Modifier.height(8.dp))
         Box(
-            modifier = Modifier.padding(horizontal = 20.dp)
+            modifier = Modifier.padding(horizontal = 24.dp)
         ) {
-            OnboardDescriptionComponent(onboardModel.description)
+            OnboardDescriptionComponent(onboardItem.description)
         }
-        Spacer(modifier = Modifier.height(40.dp))
+        Spacer(modifier = Modifier.height(64.dp))
     }
 }
